@@ -1,0 +1,130 @@
+@page
+@model ContactManager.Pages.Contacts.EditModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Contact</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .edit-container {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 20px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+            .edit-container h1 {
+                font-size: 36px;
+                margin-bottom: 30px;
+                color: #3498DB;
+                text-align: center;
+                text-transform: uppercase;
+            }
+
+            .edit-container .form-group {
+                margin-bottom: 20px;
+            }
+
+            .edit-container label {
+                font-weight: bold;
+                color: #6c757d;
+            }
+
+            .edit-container .btn-back {
+                background-color: #6c757d;
+                border-color: #6c757d;
+            }
+
+                .edit-container .btn-back:hover {
+                    background-color: #5a6268;
+                    border-color: #545b62;
+                }
+
+            .edit-container .btn-save {
+                background-color: #3498DB;
+                border-color: #3498DB;
+            }
+
+                .edit-container .btn-save:hover {
+                    background-color: #217dbb;
+                    border-color: #217dbb;
+                }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="edit-container">
+            <h1>Edit Contact</h1>
+
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="Contact.ContactId" />
+                <div class="form-group row mt-3">
+                    <label class="col-sm-2 col-form-label" asp-for="Contact.Name"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="Contact.Name" class="form-control" />
+                        <span asp-validation-for="Contact.Name" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mt-3">
+                    <label class="col-sm-2 col-form-label" asp-for="Contact.Address"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="Contact.Address" class="form-control" />
+                        <span asp-validation-for="Contact.Address" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mt-3">
+                    <label class="col-sm-2 col-form-label" asp-for="Contact.City"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="Contact.City" class="form-control" />
+                        <span asp-validation-for="Contact.City" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mt-3">
+                    <label class="col-sm-2 col-form-label" asp-for="Contact.State"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="Contact.State" class="form-control" />
+                        <span asp-validation-for="Contact.State" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mt-3">
+                    <label class="col-sm-2 col-form-label" asp-for="Contact.Zip"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="Contact.Zip" class="form-control" />
+                        <span asp-validation-for="Contact.Zip" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mt-3">
+                    <label class="col-sm-2 col-form-label" asp-for="Contact.Email"></label>
+                    <div class="col-sm-10">
+                        <input asp-for="Contact.Email" class="form-control" />
+                        <span asp-validation-for="Contact.Email" class="text-danger"></span>
+                    </div>
+                </div>
+                <div class="form-group row mt-5">
+                    <div class="col-sm-4">
+                        <a class="btn btn-secondary btn-back" asp-page="Index">Back to List</a>
+                    </div>
+                    <div class="col-sm-5">
+                        <input type="submit" value="Save" class="btn btn-primary btn-save" />
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

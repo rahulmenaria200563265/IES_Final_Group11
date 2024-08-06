@@ -1,0 +1,89 @@
+/* General table styles */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+    .table th,
+    .table td {
+        padding: 12px;
+        text-align: left;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .table th {
+        background-color: #00796b;
+        color: white;
+    }
+
+    .table tr:hover {
+        background-color: #e0f7fa;
+        transition: background-color 0.3s ease;
+    }
+
+/* Actions styles */
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+    .actions a {
+        text-decoration: none;
+        padding: 10px 16px;
+        border-radius: 5px;
+        color: #fff;
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+        .actions a.edit {
+            background-color: #00796b;
+        }
+
+        .actions a.details {
+            background-color: #004d40;
+        }
+
+        .actions a.delete {
+            background-color: #e91e63;
+        }
+
+        .actions a:hover {
+            transform: scale(1.05);
+            opacity: 0.8;
+        }
+
+/* Form styles */
+.form-floating {
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    padding: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Welcome notes styles */
+#welcome-note1 {
+    font-family: 'Tektur', cursive; /* Modern and stylish font */
+    font-size: 60px; /* Larger font size for prominence */
+    color: #FFFF00; /* Bright yellow color */
+    text-shadow: 4px 4px 6px #000000; /* Dark shadow for better visibility */
+}
+
+#welcome-note2 {
+    font-family: 'Tektur', cursive; /* Modern and stylish font */
+    font-size: 80px; /* Large font size for prominence */
+    color: #FFFF00; /* Bright yellow color */
+    text-shadow: 4px 4px 6px #000000; /* Dark shadow for better visibility */
+}
+
+
+/* Contact form styles */
+#contact-form {
+    margin: 15px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

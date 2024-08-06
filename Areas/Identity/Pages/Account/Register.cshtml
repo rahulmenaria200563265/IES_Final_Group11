@@ -1,0 +1,123 @@
+﻿@page
+@model ContactManager.Areas.Identity.Pages.Account.RegisterModel
+@{
+    string primaryColor = "#00796b"; 
+    ViewData["Title"] = "Register";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+<style>
+    /* Styles for the form */
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+
+    h1, h2 {
+        color: @primaryColor;
+    }
+
+    /* Styling for the form inputs */
+    .form-floating {
+        position: relative;
+    }
+
+        .form-floating input[type="email"],
+        .form-floating input[type="password"] {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 10px 30px 10px 10px;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .form-floating label {
+            color: @primaryColor;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .form-floating input::placeholder {
+            color: #aaa;
+            text-align: center;
+        }
+
+    /* Styling for the Register button */
+    #registerSubmit {
+        background-color: @primaryColor;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 16px;
+    }
+
+        #registerSubmit:hover {
+            background-color: #004d40; /* Darker shade of primary color */
+        }
+
+    /* Styling for the image */
+    .block {
+        display: block;
+        margin: 20px auto;
+        max-width: 600px;
+    }
+
+    /* Styles for icons */
+    .fa {
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #aaa;
+    }
+
+    /* Error text */
+    .text-danger {
+        color: #d9534f; /* Adjusted to a red tone */
+    }
+</style>
+
+<div class="row justify-content-around" style="margin-top: 5%">
+    <div class="col-md-4">
+        <form id="registerForm" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="card border-0">
+            <h1 class="text-center mb-4"><i class="fas fa-user-plus"></i> Register</h1>
+            <h2 class="text-center mb-4">Create a new account</h2>
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-floating mb-3">
+                <i class="fas fa-envelope fa"></i>
+                <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="Email" />
+                <label asp-for="Input.Email"></label>
+                <span asp-validation-for="Input.Email" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <i class="fas fa-lock fa"></i>
+                <input asp-for="Input.Password" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Password" />
+                <label asp-for="Input.Password"></label>
+                <span asp-validation-for="Input.Password" class="text-danger"></span>
+            </div>
+            <div class="form-floating mb-3">
+                <i class="fas fa-lock fa"></i>
+                <input asp-for="Input.ConfirmPassword" class="form-control" autocomplete="new-password" aria-required="true" placeholder="Confirm Password" />
+                <label asp-for="Input.ConfirmPassword"></label>
+                <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+            </div>
+            <button id="registerSubmit" type="submit" class="w-100"><i class="fas fa-user-plus"></i> Register</button>
+        </form>
+    </div>
+    <div class="col-md-4">
+        <section>
+            <img class="block" src="~/images/register.gif" alt="Image" />
+        </section>
+    </div>
+</div>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

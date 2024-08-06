@@ -1,0 +1,115 @@
+﻿@page
+@model PrivacyModel
+@{
+    ViewData["Title"] = "Team Members";
+}
+
+<style>
+    /* Styles for the Role Management Dashboard */
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #e0f7fa;
+        margin: 0;
+        padding: 0;
+    }
+
+    h1 {
+        color: #00796b;
+        text-align: center;
+        margin-top: 30px;
+        font-size: 2.5em;
+    }
+
+    h4 {
+        color: #004d40;
+        margin-top: 20px;
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+    p {
+        color: #004d40;
+        text-align: center;
+        margin-bottom: 15px;
+        font-size: 1.2em;
+    }
+
+    /* User details section */
+    .user-details {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-top: 40px;
+    }
+
+    .user-card {
+        width: 250px;
+        border-radius: 12px;
+        overflow: hidden;
+        margin: 20px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
+        background-color: #ffffff;
+        cursor: pointer;
+    }
+
+        .user-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+        }
+
+        .user-card img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-bottom: 4px solid #00796b;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .user-card h2 {
+            color: #00796b;
+            text-align: center;
+            margin: 15px 0 10px;
+            font-size: 1.3em;
+        }
+
+        .user-card p {
+            color: #004d40;
+            text-align: center;
+            margin: 0 0 15px;
+            font-size: 1em;
+        }
+</style>
+
+<h1>@ViewData["Title"]</h1>
+
+<h4>
+    Welcome to the Role Management Dashboard
+</h4>
+<p>
+    Here are the details of our team members.
+</p>
+
+<!-- User details section -->
+<div class="user-details">
+    <div class="user-card">
+        <img src="~/images/image1.jpg" alt="Rahul Menaria" />
+        <h2>Rahul Menaria</h2>
+        <p>STUDENT ID: 200563265</p>
+    </div>
+    <div class="user-card">
+        <img src="~/images/image2.jpg" alt="Rahul Menaria" />
+        <h2>Rahul Menaria</h2>
+        <p>STUDENT ID: 200555789</p>
+    </div>
+    <div class="user-card">
+        <img src="~/images/image3.jpeg" alt="Ishmeet Kaur" />
+        <h2>Ishmeet Kaur</h2>
+        <p>STUDENT ID: 200591350</p>
+    </div>
+    <div class="user-card">
+        <img src="~/images/image4.jpeg" alt="Patel Megha Ajendrabhai" />
+        <h2>Patel Megha Ajendrabhai</h2>
+        <p>STUDENT ID: 200590965</p>
+    </div>
+</div>

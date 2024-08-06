@@ -1,0 +1,145 @@
+﻿@page
+@model ContactManager.Areas.Identity.Pages.Account.LoginModel
+@{
+    string primaryColor = "#00796b"; // Ensure this color matches the primary color from your main page
+    ViewData["Title"] = "Log in";
+}
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+<style>
+    /* Styles for the form */
+    .card {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        padding: 20px;
+    }
+
+    h2 {
+        color: @primaryColor;
+    }
+
+    /* Styling for the form inputs */
+    .form-floating input[type="email"],
+    .form-floating input[type="password"] {
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 10px 30px 10px 10px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .form-floating label {
+        color: @primaryColor;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .form-floating input::placeholder {
+        color: #aaa;
+        text-align: center;
+    }
+
+    /* Styling for the Remember Me checkbox */
+    .form-check input[type="checkbox"] {
+        color: @primaryColor;
+    }
+
+    .form-check-label {
+        color: @primaryColor;
+    }
+
+    /* Styling for the Log in button */
+    #login-submit {
+        background-color: @primaryColor;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+        #login-submit:hover {
+            background-color: darken(@primaryColor, 10%);
+        }
+
+    /* Styling for links */
+    .forgot-password a,
+    .register a,
+    .resend-confirmation a {
+        color: @primaryColor;
+        text-decoration: none;
+    }
+
+        .forgot-password a:hover,
+        .register a:hover,
+        .resend-confirmation a:hover {
+            text-decoration: underline;
+        }
+
+    /* Styling for the image */
+    .block {
+        display: block;
+        margin: 20px auto;
+        max-width: 600px;
+    }
+
+    /* Styles for icons */
+    .fa {
+        position: absolute;
+        left: 8px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: #aaa;
+    }
+</style>
+
+<div class="container">
+    <div class="row justify-content-around" style="margin-top: 5%">
+        <div class="col-md-4">
+            <form id="account" method="post" class="card border-0">
+                <h2 class="text-center mb-4"><i class="fas fa-sign-in-alt"></i> Login to your Account</h2>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-floating mb-3">
+                    <i class="fas fa-envelope fa"></i>
+                    <input asp-for="Input.Email" class="form-control" autocomplete="username" aria-required="true" placeholder="Email" />
+                    <label asp-for="Input.Email"></label>
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+                <div class="form-floating mb-3">
+                    <i class="fas fa-lock fa"></i>
+                    <input asp-for="Input.Password" class="form-control" autocomplete="current-password" aria-required="true" placeholder="Password" />
+                    <label asp-for="Input.Password"></label>
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="form-check mb-3">
+                    <input class="form-check-input" asp-for="Input.RememberMe" />
+                    <label class="form-check-label" asp-for="Input.RememberMe">Remember me</label>
+                </div>
+                <button id="login-submit" type="submit" class="btn btn-lg"><i class="fas fa-sign-in-alt"></i> Log in</button>
+                <div class="forgot-password text-center mt-3">
+                    <a asp-page="./ForgotPassword">Forgot your password?</a>
+                </div>
+                <div class="register text-center mt-3">
+                    <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                </div>
+                <div class="resend-confirmation text-center mt-3">
+                    <a asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <section>
+                <img class="block" src="~/images/login1.gif" alt="Image" />
+            </section>
+        </div>
+    </div>
+</div>
+
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

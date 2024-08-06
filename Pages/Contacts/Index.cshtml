@@ -1,0 +1,159 @@
+@page
+@model ContactManager.Pages.Contacts.IndexModel
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Details</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        th, td {
+            text-align: center;
+            vertical-align: middle !important;
+            font-size: 16px;
+            padding: 10px;
+        }
+
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+            color: #555;
+            text-transform: uppercase;
+        }
+
+        .table-striped tbody tr:nth-of-type(odd) {
+            background-color: #f9f9f9;
+        }
+
+        .table-hover tbody tr {
+            transition: background-color 0.3s;
+        }
+
+            .table-hover tbody tr:hover {
+                background-color: #eaeaea;
+                cursor: pointer;
+            }
+
+        .actions a {
+            margin-right: 5px;
+            transition: transform 0.3s;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+            .actions a:hover {
+                transform: scale(1.1);
+            }
+
+        .btn {
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s;
+        }
+
+        .btn-warning {
+            background-color: #ffc107;
+            border-color: #ffc107;
+        }
+
+            .btn-warning:hover {
+                background-color: #ffb207;
+                border-color: #ffb207;
+            }
+
+        .btn-info {
+            background-color: #17a2b8;
+            border-color: #17a2b8;
+        }
+
+            .btn-info:hover {
+                background-color: #1798a9;
+                border-color: #1798a9;
+            }
+
+        .btn-danger {
+            background-color: #dc3545;
+            border-color: #dc3545;
+        }
+
+            .btn-danger:hover {
+                background-color: #d83a4d;
+                border-color: #d83a4d;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Details</h1>
+
+        <p>
+            <a class="btn btn-success bi bi-person-plus-fill h2" asp-page="Create"> Create New</a>
+        </p>
+
+        <table class="table table-striped table-hover">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>City</th>
+                    <th>State</th>
+                    <th>Zip</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model.Contact)
+                {
+                    <tr class="contact-row" data-id="@item.ContactId">
+                        <td>@Html.DisplayFor(modelItem => item.Name)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Address)</td>
+                        <td>@Html.DisplayFor(modelItem => item.City)</td>
+                        <td>@Html.DisplayFor(modelItem => item.State)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Zip)</td>
+                        <td>@Html.DisplayFor(modelItem => item.Email)</td>
+                        <td class="@item.Status">@Html.DisplayFor(modelItem => item.Status)</td>
+                        <td class="actions">
+                            @if ((await AuthorizationService.AuthorizeAsync(User, item, ContactOperations.Update)).Succeeded)
+                            {
+                                <a asp-page="./Edit" asp-route-id="@item.ContactId" class="btn btn-warning" title="Edit">
+                                    <i class="bi bi-pencil-fill"></i>
+                                </a>
+                            }
+                            <a asp-page="./Details" asp-route-id="@item.ContactId" class="btn btn-info" title="Details">
+                                <i class="bi bi-journal-text"></i>
+                            </a>
+                            @if ((await AuthorizationService.AuthorizeAsync(User, item, ContactOperations.Delete)).Succeeded)
+                            {
+                                <a asp-page="./Delete" asp-route-id="@item.ContactId" class="btn btn-danger" title="Delete">
+                                    <i class="bi bi-trash-fill"></i>
+                                </a>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.contact-row').on('click', function () {
+                var contactId = $(this).data('id');
+                // Implement logic for row click action, such as opening details modal or navigating to a specific contact page
+                console.log('Clicked on contact ID: ' + contactId);
+            });
+        });
+    </script>
+</body>
+</html>

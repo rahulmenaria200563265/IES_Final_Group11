@@ -1,0 +1,189 @@
+{
+  "Files": [
+    {
+      "Id": "D:\\IES_Final_Group11\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\ContactManager.bundle.scp.css",
+      "PackagePath": "staticwebassets\\ContactManager.bundle.scp.css"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\favicon_io.zip",
+      "PackagePath": "staticwebassets\\favicon_io.zip"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\favicon_io\\android-chrome-192x192.png",
+      "PackagePath": "staticwebassets\\favicon_io\\android-chrome-192x192.png"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\favicon_io\\android-chrome-512x512.png",
+      "PackagePath": "staticwebassets\\favicon_io\\android-chrome-512x512.png"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\favicon_io\\apple-touch-icon.png",
+      "PackagePath": "staticwebassets\\favicon_io\\apple-touch-icon.png"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\favicon_io\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\favicon_io\\favicon-16x16.png"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\favicon_io\\favicon-32x32.png",
+      "PackagePath": "staticwebassets\\favicon_io\\favicon-32x32.png"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\favicon_io\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon_io\\favicon.ico"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\favicon_io\\site.webmanifest",
+      "PackagePath": "staticwebassets\\favicon_io\\site.webmanifest"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\images\\contacts.png",
+      "PackagePath": "staticwebassets\\images\\contacts.png"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\images\\image1.jpg",
+      "PackagePath": "staticwebassets\\images\\image1.jpg"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\images\\image2.jpg",
+      "PackagePath": "staticwebassets\\images\\image2.jpg"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\images\\image3.jpeg",
+      "PackagePath": "staticwebassets\\images\\image3.jpeg"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\images\\image4.jpeg",
+      "PackagePath": "staticwebassets\\images\\image4.jpeg"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\images\\light.jpeg",
+      "PackagePath": "staticwebassets\\images\\light.jpeg"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\images\\login1.gif",
+      "PackagePath": "staticwebassets\\images\\login1.gif"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\images\\planeImage.jpg",
+      "PackagePath": "staticwebassets\\images\\planeImage.jpg"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\images\\register.gif",
+      "PackagePath": "staticwebassets\\images\\register.gif"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\images\\register1.jpg",
+      "PackagePath": "staticwebassets\\images\\register1.jpg"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\images\\user12.gif",
+      "PackagePath": "staticwebassets\\images\\user12.gif"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "D:\\IES_Final_Group11\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.ContactManager.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.ContactManager.props",
+      "PackagePath": "build\\ContactManager.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.ContactManager.props",
+      "PackagePath": "buildMultiTargeting\\ContactManager.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.ContactManager.props",
+      "PackagePath": "buildTransitive\\ContactManager.props"
+    }
+  ],
+  "ElementsToRemove": []
+}
